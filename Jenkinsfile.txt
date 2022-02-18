@@ -27,7 +27,7 @@ pipeline
 
 		stage('Deploy')
 		{
-			steps{ bat 'robocopy dist/frontend C:/Program Files/nginx-1.20.2 /E & EXIT /B 0'}
+			steps{ bat 'robocopy dist/frontend C:/nginx-1.20.2/html /E & EXIT /B 0'}
 		}
 	
 	}
